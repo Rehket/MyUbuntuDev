@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # install some dependencies
 RUN apt-get update && \
-    apt-get install -y --force-yes \
+    apt-get install -y --allow-change-held-packages \
     apt-transport-https \
     ssh-client \
     build-essential \
